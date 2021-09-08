@@ -21,3 +21,14 @@
 * I have carried my headphones during travel.
 
 Take me to [AboutMe](AboutMe.md)
+
+---
+## Beverage Section
+This is the beverage, location and price table
+
+| Drink		                     | Location	    | Price    |
+| -------------                  | -------------| -------- |
+| Wild Strawberry Lemonade Freez | taco bell	| $2.50    |
+| Mountain Dew Baja Blast	     | taco bell	| $2.70    |
+| Fountain Drink.	             | taco bell    | $1.70    |
+| Diet Pepsi	                 | taco bell	| $1.40    |
