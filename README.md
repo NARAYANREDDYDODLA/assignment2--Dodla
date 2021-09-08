@@ -41,3 +41,61 @@ As **Stephen William Hawking** said:
 >Science is not only a disciple of reason but, also, one of romance and passion.
 
 >Intelligence is the ability to adapt to change.
+
+
+---
+## Code Fencing
+
+Inclusion-Exclusion Principle from **Combinatorics**
+
+>Combinatorics is an area of mathematics primarily concerned with counting, both as a means and an end in obtaining results, and certain properties of finite structures.
+>It is closely related to many other areas of mathematics and has many applications ranging from logic to statistical physics, from evolutionary biology to computer science, etc.
+
+Inclusion-Exclusion Principle [Reference_link](https://en.wikipedia.org/wiki/Combinatorics)
+
+code for Inclusion-Exclusion Principle
+
+```
+
+int solve (int n, int r) {
+    vector<int> p;
+    for (int i=2; i*i<=n; ++i)
+        if (n % i == 0) {
+            p.push_back (i);
+            while (n % i == 0)
+                n /= i;
+        }
+    if (n > 1)
+        p.push_back (n);
+
+    int sum = 0;
+    for (int msk=1; msk<(1<<p.size()); ++msk) {
+        int mult = 1,
+            bits = 0;
+        for (int i=0; i<(int)p.size(); ++i)
+            if (msk & (1<<i)) {
+                ++bits;
+                mult *= p[i];
+            }
+
+        int cur = r / mult;
+        if (bits % 2 == 1)
+            sum += cur;
+        else
+            sum -= cur;
+    }
+
+    return r - sum;
+}
+```
+Inclusion-Exclusion Principle[code_link](https://cp-algorithms.com/combinatorics/inclusion-exclusion.html)
+
+
+
+
+
+
+
+
+
+
