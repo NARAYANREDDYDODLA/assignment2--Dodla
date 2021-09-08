@@ -32,3 +32,12 @@ This is the beverage, location and price table
 | Mountain Dew Baja Blast	     | taco bell	| $2.70    |
 | Fountain Drink.	             | taco bell    | $1.70    |
 | Diet Pepsi	                 | taco bell	| $1.40    |
+
+---
+## Pithy Quotes
+
+As **Stephen William Hawking** said:
+
+>Science is not only a disciple of reason but, also, one of romance and passion.
+
+>Intelligence is the ability to adapt to change.
